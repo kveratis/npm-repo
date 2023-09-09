@@ -1,0 +1,20 @@
+{
+  "name": "npm-repo",
+  "version": "1.0.0",
+  "description": "basic npm monorepo with workspaces",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.49.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  },
+  "workspaces": [
+    "./apps/*",
+    "./packages/*"
+  ]
+}

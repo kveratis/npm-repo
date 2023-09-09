@@ -1,12 +1,14 @@
 {
   "name": "module-a",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "license": "MIT",
   "scripts": {
-    "build": "node ./index.js"
+    "build": "tsc -b",
+    "start": "node dist/index.js"
   },
   "dependencies": {
-    "module-b": "^1.0.0"
+    "module-b": "workspace:*"
   }
 }

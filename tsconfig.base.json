@@ -19,6 +19,7 @@
     "skipLibCheck": true,
     "allowJs": true,
     "checkJs": true,
+    "composite": true,
     "target": "ES2022",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",

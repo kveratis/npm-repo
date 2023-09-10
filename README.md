@@ -48,6 +48,7 @@ npm init -w ./packages/new_package_name
 ## Run same script across all workspaces
 
 ```cli
+npm run build -ws
 npm run test -ws
 ```
 
@@ -55,4 +56,5 @@ npm run test -ws
 
 ```cli
 npm run build -w module-a
+npm run start -w module-a
 ```

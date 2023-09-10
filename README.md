@@ -12,16 +12,17 @@ npm init -y
 npm install -D typescript eslint prettier
 mkdir apps
 mkdir packages
+npm install -D @types/node @types/jest jest
+npm install -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-airbnb-base eslint-config-airbnb-typescript eslint-config-prettier eslint-import-resolver-typescript eslint-plugin-import eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-prettier
+npm install dayjs lodash
+npm install -D @types/lodash ts-jest ts-node
 ```
 
 Edit package.json
 
 - Remove "main"
 - Add "private": true (This is a requirement for workspaces to prevent entire repo from accidentally being published to the registry, only affects the root of the repo)
-- Add "workspaces": [
-  "./apps/*",
-  "./packages/*"
-  ]
+- Add "workspaces": [ "./apps/*", "./packages/*" ]
 
 ```cli
 npm install

@@ -9,6 +9,6 @@
     "start": "node dist/index.js"
   },
   "dependencies": {
-    "module-b": "workspace:*"
+    "module-b": "^1.0.0"
   }
 }

@@ -2,17 +2,15 @@ module.exports = {
   root: true,
   plugins: [
     '@typescript-eslint', 
-    "eslint-comments",
     'import', 
     'jest', 
     'prettier'],
   extends: [
-    'airbnb',
+    'airbnb-base',
     'airbnb-typescript',
     'airbnb/hooks',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'plugin:eslint-comments/recommended',
     'plugin:jest/recommended',
     'prettier',
   ],
